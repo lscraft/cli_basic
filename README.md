@@ -125,7 +125,7 @@ num:10end
 		cmdin.Close()
 		os.Exit(1)
 	}
- cmd.Stdout = os.Stdout
+ 	cmd.Stdout = os.Stdout
 	cmd.Start()
 	io.WriteString(cmdin, cmdinfo)
 	cmdin.Close()
